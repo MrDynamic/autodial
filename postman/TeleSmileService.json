@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TeleSmileService",
+		"_postman_id": "f9be091a-292a-b418-25b7-720a14181254",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "autodial",
+			"request": {
+				"url": "http://10.81.6.146:7101/TeleSmileApplication-TeleSmileViewController-context-root/services/cti/autodial",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"param1\":\"10387341\",\r\n  \"param2\":\"Firstname\",\r\n  \"param3\":\"Lastname\",\r\n  \"param4\":\"TYPE\",\r\n  \"param5\":\"MAIN\",\r\n  \"param6\":\"SOURCE\",\r\n  \"param7\":\"Test Note 1\",\r\n  \"param8\":\"Test Note 2\",\r\n  \"DNIS\":\"29997\",\r\n  \"ANI\":\"0840240734\",\r\n  \"agent\":\"agent01\",\r\n  \"callDate\":\"12:59:59\",\r\n  \"callCategory\":\"OUTBOUND\",\r\n  \"callType\":\"C_TEST\",\r\n  \"dialMode\":\"1\"\r\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "newlead",
+			"request": {
+				"url": "http://10.81.6.146:7101/TeleSmileApplication-TeleSmileViewController-context-root/services/cti/autodial",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"param1\":\"10387341\",\r\n  \"param2\":\"Firstname\",\r\n  \"param3\":\"Lastname\",\r\n  \"param4\":\"TYPE\",\r\n  \"param5\":\"MAIN\",\r\n  \"param6\":\"SOURCE\",\r\n  \"param7\":\"Test Note 1\",\r\n  \"param8\":\"Test Note 2\",\r\n  \"DNIS\":\"29997\",\r\n  \"ANI\":\"0840240734\",\r\n  \"agent\":\"agent01\",\r\n  \"callDate\":\"12:59:59\",\r\n  \"callCategory\":\"INBOUND\",\r\n  \"callType\":\"C_TEST\",\r\n  \"dialMode\":\"1\"\r\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

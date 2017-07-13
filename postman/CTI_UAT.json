@@ -1,0 +1,219 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CTI_UAT",
+		"_postman_id": "16d42b5b-a531-94c6-d889-59913ff93166",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "screenpopdata",
+			"request": {
+				"url": "http://ctiserveruat/api/telephony/screenpopdata?userId=agent01&password=P@ssw0rd&extension=1020",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"url": "http://ntbbkk24/api/telephony/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"agent01\",\"extension\":\"1010\",\"password\":\"P@ssw0rd\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "READY",
+			"request": {
+				"url": "http://ntbbkk24/api/telephony/ready",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"agent01\",\"extension\":\"1010\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE_PARAM",
+			"request": {
+				"url": "http://ntbbkk24/api/telephony/saveparameter",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"agent01\",\"extension\":\"1010\",\"param1\":\"xxxxxx\"\r\n,\"param2\":\"\"\r\n,\"param3\":\"\"\r\n,\"param4\":\"\"\r\n,\"param5\":\"\"\r\n,\"param6\":\"\"\r\n,\"param7\":\"\"\r\n,\"param8\":\"\"\r\n,\"param9\":\"\"\r\n,\"param10\":\"\"\r\n,\"param11\":\"\"\r\n,\"param12\":\"\"\r\n,\"param13\":\"\"\r\n,\"param14\":\"\"\r\n,\"param15\":\"\"\r\n,\"param16\":\"\"\r\n,\"param17\":\"\"\r\n,\"param18\":\"\"\r\n,\"param19\":\"\"\r\n,\"param20\":\"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DIAL",
+			"request": {
+				"url": "http://ntbbkk24/api/telephony/dial",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"agent01\",\"extension\":\"1010\",\"password\":\"P@ssw0rd\",\"outboundserviceId\":\"3\",\"phonenumber\":\"0909216111\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "NEXT_CALL",
+			"request": {
+				"url": "http://ntbbkk24/api/telephony/nextcall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"agent01\",\"extension\":\"1010\",\"nextCallReasonCode\":\"TSACT\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LOGOUT",
+			"request": {
+				"url": "http://ntbbkk24/api/telephony/logout",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"agent01\",\"extension\":\"1010\",\"password\":\"P@ssw0rd\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ConvertVoice",
+			"request": {
+				"url": "http://ntbbkk24:8003/api/ConvertVoice/convert",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"folderName\":\"xxxx\",\"trackId\":\"16091\",\"fileName\":\"testVox\"}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CURRENT_STATE",
+			"request": {
+				"url": {
+					"raw": "http://ntbbkk24/api/telephony/CurrentState?userId=agent01&extension=1010",
+					"protocol": "http",
+					"host": [
+						"ntbbkk24"
+					],
+					"path": [
+						"api",
+						"telephony",
+						"CurrentState"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "agent01",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "extension",
+							"value": "1010",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "IMPORT_PRIMARY_TABLE",
+			"request": {
+				"url": "http://NTBBKK19:7003/TeleSmileCTIService/service/importcalltableprimary",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"SuttisitT\",\"appId\":\"3\",\"filePath\":\"\\\\\\\\ntbbkk22\\\\\\\\upload_epro\\\\\\\\INHOUSE\\\\\\\\INH_PolawatB_20170206_01992.txt\",\"tableDefId\":\"3\",\"tableName\":\"INH_PolawatB_20170206_0108100\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,231 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CTI_PRD",
+		"_postman_id": "bc5e71ea-ae9f-2cb9-d95a-4d86ec45f256",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"url": "http://ntabkk62:7003/TeleSmileCTIService/service/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"Chaiyap\",\"extension\":\"1010\",\"password\":\"Yafontan@6969\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CURRENT_STATE",
+			"request": {
+				"url": "http://ntabkk62:7003/TeleSmileCTIService/service/currentstate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"Chaiyap\",\"extension\":\"1010\",\"password\":\"Yafontan@6969\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LOGOUT",
+			"request": {
+				"url": "http://ctiserverprd/api/telephony/logout",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"loadtest132\",\"extension\":\"7110\",\"password\":\"Azay#001\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ConvertVoice",
+			"request": {
+				"url": "http://ntabkk43:8003/api/ConvertVoice/convert",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"folderName\":\"xxxx\",\"trackId\":\"13542\",\"fileName\":\"testVox\"}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ConvertVoice",
+			"request": {
+				"url": "http://ntabkk43:8003/api/ConvertVoice/convert",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"folderName\":\"xxxx\",\"trackId\":\"301309\",\"fileName\":\"testVox\"}]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DIAL",
+			"request": {
+				"url": "http://ctiserverprd/api/telephony/dial",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"loadtest132\",\"extension\":\"7110\",\"password\":\"Azay#001\",\"outboundserviceId\":\"49\",\"phonenumber\":\"0909216111\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "READY_DIRECT",
+			"request": {
+				"url": "http://ctiserverprd/api/telephony/ready",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"loadtest152\",\"extension\":\"7110\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN_DIRECT",
+			"request": {
+				"url": "http://ctiserverprd/api/telephony/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"loadtest132\",\"extension\":\"7110\",\"password\":\"Azay#001\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CURRENT_STATE_DIRECT",
+			"request": {
+				"url": "http://ctiserverprd/api/telephony/currentstate&userId=loadtest132&extension=7110",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"loadtest132\",\"extension\":\"7110\",\"password\":\"Azay#001\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "NEXT_CALL_DIRECT",
+			"request": {
+				"url": "http://ctiserverprd/api/telephony/nextcall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"loadtest132\",\"extension\":\"7110\",\"nextCallReasonCode\":\"TSACT\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE_PARAM_DIRECT",
+			"request": {
+				"url": "http://ctiserverprd/api/telephony/saveparameter",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":\"loadtest132\",\"extension\":\"7110\",\"param1\":\"xxxxxx\"\r\n,\"param2\":\"\"\r\n,\"param3\":\"\"\r\n,\"param4\":\"\"\r\n,\"param5\":\"\"\r\n,\"param6\":\"\"\r\n,\"param7\":\"\"\r\n,\"param8\":\"\"\r\n,\"param9\":\"\"\r\n,\"param10\":\"\"\r\n,\"param11\":\"\"\r\n,\"param12\":\"\"\r\n,\"param13\":\"\"\r\n,\"param14\":\"\"\r\n,\"param15\":\"\"\r\n,\"param16\":\"\"\r\n,\"param17\":\"\"\r\n,\"param18\":\"\"\r\n,\"param19\":\"\"\r\n,\"param20\":\"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
