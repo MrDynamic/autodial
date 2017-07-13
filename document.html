@@ -2,9 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8" /> 
-  <title>Postman Request</title>
+  <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/colorbox.css" />
+  <script src="scripts/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="scripts/jquery.colorbox.js"></script>
   <style>
       .txt-not-found{
         text-align: center;
@@ -13,7 +16,9 @@
   </style>
   <script>
 			$(document).ready(function(){
-			    $(".group1").colorbox({rel:'group1',transition:"fade"});
+			    $(".manaul").colorbox({rel:'manaul',transition:"fade",overlayClose:false});
+			    $(".auto").colorbox({rel:'auto',transition:"fade",overlayClose:false});
+			    $(".newlead").colorbox({rel:'newlead',transition:"fade",overlayClose:false});
 			});
     </script>
 </head>
@@ -59,7 +64,7 @@
    <div class="panel panel-primary">
     <div class="panel-heading">Document</div>
     <div class="panel-body">
-          <h2>CTI</h2>
+          <h3>CTI</h3>
           <table class="table table-hover">
             <thead>
               <tr>
@@ -71,16 +76,18 @@
             <tbody>
               <tr>
                 <td>Manaul</td>
-                <td><a class="group1" href="document/CTI/manual.png">View</a></td>
-                <td><a class="group1" href="document/CTI/manual-seq.png">View</a></td>
+                <td><a class="manaul" href="document/CTI/manual.png" title="Overview Manaul">View</a></td>
+                <td><a class="manaul" href="document/CTI/manual-seq.png" title="Sequence Manaul">View</a></td>
+              </tr>
+             <tr>
+                <td>Auto Dial</td>
+                <td><a class="auto" href="document/CTI/autodial.png" title="Overview Auto dial">View</a></td>
+                <td><a class="auto" href="document/CTI/autodial-seq.png" title="Sequence Auto dial">View</a></td>
               </tr>
               <tr>
-                <td>CTI UAT</td>
-                <td><a href="postman/CTI_UAT.json" target="_blank">Download</a></td>
-              </tr>
-              <tr>
-                <td>TeleSmile Service</td>
-                <td><a href="postman/TeleSmileService.json" target="_blank">Download</a></td>
+                <td>New lead</td>
+                <td><a class="newlead" href="document/CTI/newlead.png" title="Overview New Lead">View</a></td>
+                <td><a class="newlead" href="document/CTI/newlead-seq.png" title="Sequence New Lead">View</a></td>
               </tr>
             </tbody>
           </table>
@@ -89,8 +96,5 @@
   </div>
   </div>
  </div>
-<script src="scripts/jquery-2.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="scripts/jquery.colorbox.js"></script>
 </body>
 </html>
