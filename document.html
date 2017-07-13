@@ -4,12 +4,18 @@
 <meta charset="utf-8" /> 
   <title>Postman Request</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/colorbox.css" />
   <style>
       .txt-not-found{
         text-align: center;
         color: #585858;
       }
   </style>
+  <script>
+			$(document).ready(function(){
+			    $(".group1").colorbox({rel:'group1',transition:"fade"});
+			});
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -24,8 +30,8 @@
       <ul class="nav navbar-nav">
         <li><a href="index.html">Auto Dialer <span class="sr-only">(current)</span></a></li>
         <li><a href="sycnstate.html">Sycn State</a></li>
-        <li class="active"><a href="postman.html">Postman Request</a></li>
-        <li><a href="document.html">Document</a></li>
+        <li><a href="postman.html">Postman Request</a></li>
+        <li class="active"><a href="document.html">Document</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -51,19 +57,22 @@
     <div class="row">
      <div class="col-md-offset-3 col-md-7">
    <div class="panel panel-primary">
-    <div class="panel-heading">Postman Request</div>
+    <div class="panel-heading">Document</div>
     <div class="panel-body">
+          <h2>CTI</h2>
           <table class="table table-hover">
             <thead>
               <tr>
                 <th>Type</th>
-                <th>URL</th>
+                <th>Overview</th>
+                <th>Sequence</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>CTI Production</td>
-                <td><a href="postman/CTI_PRD.json" target="_blank">Download</a></td>
+                <td>Manaul</td>
+                <td><a class="group1" href="document/CTI/manual.png">View</a></td>
+                <td><a class="group1" href="document/CTI/manual-seq.png">View</a></td>
               </tr>
               <tr>
                 <td>CTI UAT</td>
@@ -82,5 +91,6 @@
  </div>
 <script src="scripts/jquery-2.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="scripts/jquery.colorbox.js"></script>
 </body>
 </html>
