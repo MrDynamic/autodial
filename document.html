@@ -16,6 +16,7 @@
   </style>
   <script>
 			$(document).ready(function(){
+			    $(".login").colorbox({rel:'login',transition:"fade",overlayClose:false,width:"70%"});
 			    $(".manaul").colorbox({rel:'manaul',transition:"fade",overlayClose:false,width:"85%"});
 			    $(".auto").colorbox({rel:'auto',transition:"fade",overlayClose:false,width:"90%"});
 			    $(".newlead").colorbox({rel:'newlead',transition:"fade",overlayClose:false,width:"90%"});
@@ -75,19 +76,24 @@
             </thead>
             <tbody>
               <tr>
+                <td>Login</td>
+                <td><a class="login btn-sm btn-success" href="document/CTI/login.png" title="Overview Login">View</a></td>
+                <td><a class="login btn-sm btn-info" href="document/CTI/login-seq.png" title="Sequence Login">View</a></td>
+              </tr>
+              <tr>
                 <td>Manaul</td>
-                <td><a class="manaul" href="document/CTI/manual.png" title="Overview Manaul">View</a></td>
-                <td><a class="manaul" href="document/CTI/manual-seq.png" title="Sequence Manaul">View</a></td>
+                <td><a class="manaul btn-sm btn-success" href="document/CTI/manual.png" title="Overview Manaul">View</a></td>
+                <td><a class="manaul btn-sm btn-info" href="document/CTI/manual-seq.png" title="Sequence Manaul">View</a></td>
               </tr>
              <tr>
                 <td>Auto Dial</td>
-                <td><a class="auto" href="document/CTI/autodial.png" title="Overview Auto dial">View</a></td>
-                <td><a class="auto" href="document/CTI/autodial-seq.png" title="Sequence Auto dial">View</a></td>
+                <td><a class="auto btn-sm btn-success" href="document/CTI/autodial.png" title="Overview Auto dial">View</a></td>
+                <td><a class="auto btn-sm btn-info" href="document/CTI/autodial-seq.png" title="Sequence Auto dial">View</a></td>
               </tr>
               <tr>
                 <td>New lead</td>
-                <td><a class="newlead" href="document/CTI/newlead.png" title="Overview New Lead">View</a></td>
-                <td><a class="newlead" href="document/CTI/newlead-seq.png" title="Sequence New Lead">View</a></td>
+                <td><a class="newlead btn-sm btn-success" href="document/CTI/newlead.png" title="Overview New Lead">View</a></td>
+                <td><a class="newlead btn-sm btn-info" href="document/CTI/newlead-seq.png" title="Sequence New Lead">View</a></td>
               </tr>
             </tbody>
           </table>
